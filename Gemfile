@@ -4,19 +4,19 @@ source 'https://rubygems.org'
 # This can be removed once all gems depend on > 3.0
 gem 'mime-types', '~> 2.99', require: 'mime/types/columnar'
 
-gem 'rails', '~> 4.2.7'
-gem 'rails-i18n'
+gem 'rails', '~> 4.2.7', '>= 4.2.7.1'
+gem 'rails-i18n', '>= 4.0.9'
 
 gem 'autoprefixer-rails'
 gem 'aws-sdk', '~> 2.2'
 gem 'builder'
-gem 'clearance'
-gem 'clearance-deprecated_password_strategies'
+gem 'clearance', '>= 1.14.1'
+gem 'clearance-deprecated_password_strategies', '>= 1.10.1'
 gem 'daemons'
 gem 'dalli'
 gem 'delayed_job'
 gem 'delayed_job_active_record'
-gem 'doorkeeper'
+gem 'doorkeeper', '>= 3.1.0'
 gem 'dynamic_form'
 gem 'gchartrb', require: 'google_chart'
 gem 'gravtastic'
@@ -24,14 +24,14 @@ gem 'high_voltage'
 gem 'highline'
 gem 'honeybadger'
 gem 'http_accept_language'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.1.1'
 gem 'mail'
 gem 'multi_json'
 gem 'newrelic_rpm'
-gem 'paul_revere', '~> 2.0'
+gem 'paul_revere', '~> 2.0', '>= 2.0.0'
 gem 'pg'
 gem 'psych', '~> 2.0.12'
-gem 'rack'
+gem 'rack', '>= 1.6.12'
 gem 'rdoc'
 gem 'rest-client', require: 'rest_client'
 gem 'shoryuken', '~> 2.0.2', require: false
@@ -46,8 +46,8 @@ gem 'elasticsearch-dsl', '~> 0.1.2'
 gem 'xml-simple'
 gem 'yajl-ruby', require: 'yajl'
 gem 'compact_index', '~> 0.11.0'
-gem 'sprockets-rails', '~> 3.1.0'
-gem 'rack-attack'
+gem 'sprockets-rails', '~> 3.1.1'
+gem 'rack-attack', '>= 5.0.1'
 
 group :development, :test do
   gem 'rubocop', require: false
@@ -60,10 +60,10 @@ end
 
 group :test do
   gem 'minitest', require: false
-  gem 'capybara'
-  gem 'factory_girl_rails'
+  gem 'capybara', '>= 2.7.1'
+  gem 'factory_girl_rails', '>= 4.7.0'
   gem 'launchy'
-  gem 'rack-test', require: 'rack/test'
+  gem 'rack-test', '0.6.3'
   gem 'mocha', require: false
   gem 'bourne', require: false
   gem 'shoulda', require: false
