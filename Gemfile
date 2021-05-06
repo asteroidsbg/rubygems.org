@@ -32,7 +32,7 @@ gem 'paul_revere', '~> 2.0'
 gem 'pg'
 gem 'psych', '~> 2.0.12'
 gem 'rack'
-gem 'rdoc'
+gem 'rdoc', '>= 6.3.0'
 gem 'rest-client', require: 'rest_client'
 gem 'shoryuken', '~> 2.0.2', require: false
 gem 'statsd-instrument', '~> 2.0.6'
