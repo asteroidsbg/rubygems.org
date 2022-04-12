@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # This can be removed once all gems depend on > 3.0
 gem 'mime-types', '~> 2.99', require: 'mime/types/columnar'
 
-gem 'rails', '~> 4.2.7'
+gem 'rails', '~> 4.2.7', '>= 4.2.7.1'
 gem 'rails-i18n'
 
 gem 'autoprefixer-rails'
@@ -28,7 +28,7 @@ gem 'jquery-rails'
 gem 'mail'
 gem 'multi_json'
 gem 'newrelic_rpm'
-gem 'paul_revere', '~> 2.0'
+gem 'paul_revere', '~> 2.0', '>= 2.0.0'
 gem 'pg'
 gem 'psych', '~> 2.0.12'
 gem 'rack'
@@ -46,7 +46,7 @@ gem 'elasticsearch-dsl', '~> 0.1.2'
 gem 'xml-simple'
 gem 'yajl-ruby', require: 'yajl'
 gem 'compact_index', '~> 0.11.0'
-gem 'sprockets-rails', '~> 3.1.0'
+gem 'sprockets-rails', '~> 3.1.1'
 gem 'rack-attack'
 
 group :development, :test do
