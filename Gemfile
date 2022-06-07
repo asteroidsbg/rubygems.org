@@ -8,7 +8,7 @@ gem 'rails', '~> 4.2.7'
 gem 'rails-i18n'
 
 gem 'autoprefixer-rails'
-gem 'aws-sdk', '~> 2.2'
+gem 'aws-sdk', '~> 2.3', '>= 2.3.21'
 gem 'builder'
 gem 'clearance'
 gem 'clearance-deprecated_password_strategies'
@@ -34,7 +34,7 @@ gem 'psych', '~> 2.0.12'
 gem 'rack'
 gem 'rdoc'
 gem 'rest-client', require: 'rest_client'
-gem 'shoryuken', '~> 2.0.2', require: false
+gem 'shoryuken', '~> 2.0.11', require: false
 gem 'statsd-instrument', '~> 2.0.6'
 gem 'uglifier', '>= 1.0.3'
 gem 'unicorn'
