@@ -101,7 +101,7 @@ GEM
     compact_index (0.11.0)
     concurrent-ruby (1.0.2)
     daemons (1.2.3)
-    dalli (2.7.6)
+    dalli (3.2.3)
     delayed_job (4.1.2)
       activesupport (>= 3.0, < 5.1)
     delayed_job_active_record (4.1.1)
@@ -301,7 +301,7 @@ DEPENDENCIES
   clearance-deprecated_password_strategies
   compact_index (~> 0.11.0)
   daemons
-  dalli
+  dalli (>= 3.2.3)
   delayed_job
   delayed_job_active_record
   doorkeeper
@@ -349,4 +349,4 @@ DEPENDENCIES
   yajl-ruby
 
 BUNDLED WITH
-   1.12.5
+   1.17.3
