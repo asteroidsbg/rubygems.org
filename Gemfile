@@ -4,19 +4,19 @@ source 'https://rubygems.org'
 # This can be removed once all gems depend on > 3.0
 gem 'mime-types', '~> 2.99', require: 'mime/types/columnar'
 
-gem 'rails', '~> 4.2.7'
-gem 'rails-i18n'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
+gem 'rails-i18n', '>= 6.0.0'
 
 gem 'autoprefixer-rails'
-gem 'aws-sdk', '~> 2.2'
+gem 'aws-sdk', '~> 2.3', '>= 2.3.21'
 gem 'builder'
-gem 'clearance'
+gem 'clearance', '>= 2.5.0'
 gem 'clearance-deprecated_password_strategies'
 gem 'daemons'
-gem 'dalli'
-gem 'delayed_job'
-gem 'delayed_job_active_record'
-gem 'doorkeeper'
+gem 'dalli', '>= 3.2.3'
+gem 'delayed_job', '>= 4.1.9'
+gem 'delayed_job_active_record', '>= 4.1.5'
+gem 'doorkeeper', '>= 4.2.6'
 gem 'dynamic_form'
 gem 'gchartrb', require: 'google_chart'
 gem 'gravtastic'
@@ -24,33 +24,33 @@ gem 'high_voltage'
 gem 'highline'
 gem 'honeybadger'
 gem 'http_accept_language'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'mail'
 gem 'multi_json'
 gem 'newrelic_rpm'
-gem 'paul_revere', '~> 2.0'
+gem 'paul_revere', '~> 3.2', '>= 3.2.0'
 gem 'pg'
 gem 'psych', '~> 2.0.12'
-gem 'rack'
-gem 'rdoc'
+gem 'rack', '>= 3.0.0'
+gem 'rdoc', '>= 6.3.1'
 gem 'rest-client', require: 'rest_client'
-gem 'shoryuken', '~> 2.0.2', require: false
+gem 'shoryuken', '~> 2.0.11', require: false
 gem 'statsd-instrument', '~> 2.0.6'
 gem 'uglifier', '>= 1.0.3'
 gem 'unicorn'
 gem 'validates_formatting_of'
 gem 'will_paginate'
-gem 'elasticsearch-model', '~> 0.1.7'
+gem 'elasticsearch-model', '~> 0.1.9'
 gem 'elasticsearch-rails', '~> 0.1.7'
 gem 'elasticsearch-dsl', '~> 0.1.2'
 gem 'xml-simple'
-gem 'yajl-ruby', require: 'yajl'
+gem 'yajl-ruby', '>= 1.4.2', require: 'yajl'
 gem 'compact_index', '~> 0.11.0'
-gem 'sprockets-rails', '~> 3.1.0'
+gem 'sprockets-rails', '~> 3.1.1'
 gem 'rack-attack'
 
 group :development, :test do
-  gem 'rubocop', require: false
+  gem 'rubocop', '>= 0.49.0', require: false
   gem 'toxiproxy', '~> 0.1.3'
 end
 
@@ -70,7 +70,7 @@ group :test do
 end
 
 group :development, :deploy do
-  gem 'capistrano', '~> 3.0', require: false
-  gem 'capistrano-rails', '~> 1.1', require: false
-  gem 'capistrano-bundler', '~> 1.1', require: false
+  gem 'capistrano', '~> 3.5', '>= 3.5.0', require: false
+  gem 'capistrano-rails', '~> 1.1', '>= 1.1.7', require: false
+  gem 'capistrano-bundler', '~> 1.1', '>= 1.1.4', require: false
 end
