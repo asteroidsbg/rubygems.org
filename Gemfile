@@ -4,13 +4,13 @@ source 'https://rubygems.org'
 # This can be removed once all gems depend on > 3.0
 gem 'mime-types', '~> 2.99', require: 'mime/types/columnar'
 
-gem 'rails', '~> 4.2.7'
+gem 'rails', '~> 7.0.0'
 gem 'rails-i18n'
 
 gem 'autoprefixer-rails'
 gem 'aws-sdk', '~> 2.2'
 gem 'builder'
-gem 'clearance'
+gem 'clearance', '>= 1.16.2'
 gem 'clearance-deprecated_password_strategies'
 gem 'daemons'
 gem 'dalli'
