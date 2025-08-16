@@ -4,18 +4,18 @@ source 'https://rubygems.org'
 # This can be removed once all gems depend on > 3.0
 gem 'mime-types', '~> 2.99', require: 'mime/types/columnar'
 
-gem 'rails', '~> 4.2.7'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 gem 'rails-i18n'
 
 gem 'autoprefixer-rails'
 gem 'aws-sdk', '~> 2.2'
 gem 'builder'
-gem 'clearance'
-gem 'clearance-deprecated_password_strategies'
+gem 'clearance', '>= 1.14.2'
+gem 'clearance-deprecated_password_strategies', '>= 1.10.2'
 gem 'daemons'
 gem 'dalli'
 gem 'delayed_job'
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.7'
 gem 'doorkeeper'
 gem 'dynamic_form'
 gem 'gchartrb', require: 'google_chart'
@@ -55,7 +55,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'rails-erd'
+  gem 'rails-erd', '>= 1.5.0'
 end
 
 group :test do
